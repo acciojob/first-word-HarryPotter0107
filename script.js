@@ -1,7 +1,10 @@
 function firstWord(s) {
   // your code here
-	let word = s.split(" ")
-	console.log(s[0])
+	if (s === "" || s.indexOf(" ") === -1) {
+    return s;
+  } else {
+    return s.substring(0, s.indexOf(" "));
+  }
 }
 
 // Do not change the code below
