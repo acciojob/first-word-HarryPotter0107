@@ -1,13 +1,11 @@
 function firstWord(s) {
-  // your code here
-	if (s === "" || s.indexOf(" ") === -1) {
-    return s;
-  } else {
-    return s.substring(0, s.indexOf(" "));
-  }
+    // Trim the input string to remove leading and trailing whitespace
+    s = s.trim();
+    
+    // Split the trimmed string by whitespace characters and return the first word
+    return s.split(' ')[0];
 }
 
-// Do not change the code below
-
+// Example usage:
 const s = prompt("Enter String:");
 alert(firstWord(s));
